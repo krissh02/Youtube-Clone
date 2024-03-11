@@ -62,6 +62,10 @@ Body
    6. The check the action is performed or not by using redux extension or by using useSelector hook
    7. And then who was perform the function they will be dispatch the action by using useDispatch hook from react-redux library
    8. Then subscribe the store by using useSelector hook (who have to performed that function)
+5. Using High Order Function - it takes a function component and return a update component
+   Why we using HOF - because when we have to do some modification on the component then use HOF
+6. IMPORTANT TOPIC - Debouncing
+7. Search feature - in that we use youtube api key , debouncing (setTimeout - which is used for not calling the api of every keyletter) and caching (Redux store - which is used to not call the again and again same keyword) 
 
 
 ## Learn More
