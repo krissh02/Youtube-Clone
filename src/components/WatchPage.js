@@ -6,6 +6,7 @@ import VideoInfo from './VideoInfo';
 import useFetchYoutubeVideoDetails from '../utils/useFetchYoutubeVideoDetails';
 import RecommendVideo from './RecommendVideo';
 import useFetchYoutubeApi from '../utils/useFetchYoutubeApi';
+import LiveChat from './LiveChat';
 
 
 const WatchPage = () => {
@@ -30,6 +31,7 @@ const WatchPage = () => {
       </div>
       {/* Recommend Section */}
       <div>
+        <LiveChat />
         {
           recommend.map((r) => <RecommendVideo key={r.id} recommend = {r}/>)
         }
