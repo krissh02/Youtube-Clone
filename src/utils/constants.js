@@ -27,3 +27,5 @@ export const valueConvertor = (value) => {
         return value;
     }
 }
+
+export const LIVE_CHAT_COUNT = 20;
