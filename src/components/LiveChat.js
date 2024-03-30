@@ -27,7 +27,7 @@ const LiveChat = () => {
                 chatMessage.map((m,i) => <ChatMessage key={i} name={m.name} message={m.message}/> )
             }
         </div>
-        <form className='border border-black ml-3 rounded-b-xl p-2 h-[60px] flex justify-center' onSubmit={(e)=> {
+        <form className='border border-black ml-3 rounded-b-xl p-2 h-[60px] flex justify-center mb-6' onSubmit={(e)=> {
             e.preventDefault();
             dispatch(addMessage({
                 name:"Krishna Sabat",
