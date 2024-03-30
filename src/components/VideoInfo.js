@@ -1,5 +1,5 @@
 import React from 'react'
-import { USER_ICON, valueConvertor } from '../utils/constants'
+import { DISLIKE_ICON, DOWNLOAD_ICON, LIKE_ICON, SHARE_ICON, USER_ICON, valueConvertor } from '../utils/constants'
 import moment from 'moment';
 import useFetchYoutubeCommentDetails from '../utils/useFetchYoutubeCommentDetails';
 import CommentsContainer from './CommentsContainer';
@@ -20,14 +20,14 @@ const VideoInfo = ({details}) => {
                 <button className='py-2 px-4 rounded-full bg-red-600 text-white ml-4 text-lg font-bold'>Subscribe</button>
             </div>
             <div className='flex justify-between'>
-                <div className='bg-gray-400 text-white font-bold rounded-full mx-2'>
-                    <p className='py-3 px-6 text-lg'>{valueConvertor(details?.statistics?.likeCount)}</p>
+                <div className='text-black border border-black font-bold rounded-full mx-2 flex items-center'>
+                    <p className='px-6 text-lg'><img src={LIKE_ICON} className='w-6 mr-2 inline'></img>{valueConvertor(details?.statistics?.likeCount)} | <img src={DISLIKE_ICON} className='w-8 ml-2 inline'/></p>
                 </div>
-                <div className=' bg-gray-400 text-white font-bold rounded-full mx-2'>
-                    <p className='py-3 px-6 text-lg'>Share</p>
+                <div className='  text-black border border-black font-bold rounded-full mx-2 flex items-center'>
+                    <p className='py-3 px-6 text-lg'><img src={SHARE_ICON} className='w-8 mr-2 inline'></img>Share</p>
                 </div>
-                <div className=' bg-gray-400 text-white font-bold rounded-full mx-2'>
-                    <p className='py-3 px-6 text-lg'>Download</p>
+                <div className='  text-black border border-black font-bold rounded-full mx-2 flex items-center'>
+                    <p className='py-3 px-6 text-lg'><img src={DOWNLOAD_ICON} className='w-8 mr-2 inline'></img>Download</p>
                 </div>
             </div>
         </div>

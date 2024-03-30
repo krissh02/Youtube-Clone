@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import { HAMBURGER_ICON, USER_ICON, YOUTUBE_LOGO, YOUTUBE_SEARCH_API } from '../utils/constants'
+import { EXPOLRE_ICON, HAMBURGER_ICON, USER_ICON, YOUTUBE_LOGO, YOUTUBE_SEARCH_API } from '../utils/constants'
 import { toggleMenu } from '../utils/appSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { cacheResults } from '../utils/searchSlice'
@@ -53,7 +53,7 @@ const Header = () => {
         <div className='flex items-center col-span-2 mx-2'>
             <img src={HAMBURGER_ICON} className="h-10 mr-2 cursor-pointer" alt="HamBurger Icon" onClick={() =>toggleMenuHandler()}/>
             <a href="/">
-            <img  alt="youtube logo" src={YOUTUBE_LOGO} className="h-10 ml-4"></img>
+            <img  alt="youtube logo" src={YOUTUBE_LOGO} className="w-28 ml-4"></img>
             </a>
         </div>
         {/* left section end */}
@@ -79,7 +79,8 @@ const Header = () => {
 
         {/* Right section start*/}
         <div className='col-span-1 flex items-center justify-end px-4'>
-            <img alt='user-icon' src={USER_ICON} className='h-10'></img>
+            <img src={EXPOLRE_ICON} className='w-10 mr-10'></img>
+            <img alt='user-icon' src={USER_ICON} className='h-10 mr-3'></img>
         </div>
          {/* Right section end*/}
 
